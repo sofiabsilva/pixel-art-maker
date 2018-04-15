@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"> -->
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Sketch|Leckerli+One|Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+  <body>
+    <h1><i class="fas fa-pencil-alt"></i>Lab: Pixel Art Maker</h1>
+    <p>by Sofia Silva </p>
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+      Grid Height:
+      <input type="number" id="input_height" name="height" min="1" max="50" value="15">
+      Grid Width:
+      <input type="number" id="input_width" name="width" min="1" max="50" value="15">
+      <input type="submit" id="submit_grid" value="Create!" autofocus>
+    </form>
+
+    <h2>Pick A Color and Let Your Creativity Flow!</h2>
+    <input type="color" title="Current Color" value="#21858f" id="colorPicker">
+    <button class="fill" title="Set Background"><i class="fas fa-th"></i></button>
+    <button class="clear" title="Clear Canvas"><i class="far fa-file"></i></button>
+    <button class="removeGrid" title="Toggle Grid"> <i id="eyeClosed" class="fas fa-eye-slash"></i><i id="eye" class="fas "></i></button>
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas" oncontextmenu="return false;"></table>
+    <p class="rightClick">right click to remove color</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="designs2.js"></script>
+  </body>
+</html>
